@@ -6,20 +6,10 @@
 		"layer": "4.2"
 	},
 	"domain": "enterprise-attack",
-	"description": "Mapping Elastic Secrity (https://www.elastic.co/security) Detection Rules to MITRE ATT&CK Navigator",
+	"description": "Mapping Elastic Security Detection Rules to MITRE ATT&CK Navigator",
 	"filters": {
 		"platforms": [
-			"Linux",
-			"macOS",
-			"Windows",
-			"Azure AD",
-			"Office 365",
-			"SaaS",
-			"IaaS",
-			"Google Workspace",
-			"PRE",
-			"Network",
-			"Containers"
+			"Windows"
 		]
 	},
 	"sorting": 0,
