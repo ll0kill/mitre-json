@@ -1,0 +1,8660 @@
+{
+	"name": "Elastic Detection - Windows",
+	"versions": {
+		"attack": "9",
+		"navigator": "4.3",
+		"layer": "4.2"
+	},
+	"domain": "enterprise-attack",
+	"description": "Mapping Elastic Secrity (https://www.elastic.co/security) Detection Rules to MITRE ATT&CK Navigator",
+	"filters": {
+		"platforms": [
+			"Linux",
+			"macOS",
+			"Windows",
+			"Azure AD",
+			"Office 365",
+			"SaaS",
+			"IaaS",
+			"Google Workspace",
+			"PRE",
+			"Network",
+			"Containers"
+		]
+	},
+	"sorting": 0,
+	"layout": {
+		"layout": "flat",
+		"aggregateFunction": "max",
+		"showID": false,
+		"showName": true,
+		"showAggregateScores": true,
+		"countUnscored": false
+	},
+	"hideDisabled": true,
+	"techniques": [
+		{
+			"techniqueID": "T1548",
+			"tactic": "privilege-escalation",
+			"score": 10,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "UAC Bypass via DiskCleanup Scheduled Task Hijack (47)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Bypass UAC via Event Viewer (21)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "UAC Bypass Attempt via Privileged IFileOperation COM Interface (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "UAC Bypass via Windows Firewall Snap-In Hijack (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "UAC Bypass Attempt with IEditionUpgradeManager Elevated COM Interface (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "UAC Bypass via ICMLuaUtil Elevated COM Interface (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "UAC Bypass Attempt via Elevated COM Internet Explorer Add-On Installer (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "UAC Bypass Attempt via Windows Directory Masquerading (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Disabling User Account Control via Registry Modification (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Disabling User Account Control via Registry Modification (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1548",
+			"tactic": "defense-evasion",
+			"score": 10,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "UAC Bypass via DiskCleanup Scheduled Task Hijack (47)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Bypass UAC via Event Viewer (21)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "UAC Bypass Attempt via Privileged IFileOperation COM Interface (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "UAC Bypass via Windows Firewall Snap-In Hijack (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "UAC Bypass Attempt with IEditionUpgradeManager Elevated COM Interface (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "UAC Bypass via ICMLuaUtil Elevated COM Interface (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "UAC Bypass Attempt via Elevated COM Internet Explorer Add-On Installer (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "UAC Bypass Attempt via Windows Directory Masquerading (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Disabling User Account Control via Registry Modification (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Disabling User Account Control via Registry Modification (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1548.002",
+			"tactic": "privilege-escalation",
+			"score": 10,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "UAC Bypass via DiskCleanup Scheduled Task Hijack (47)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Bypass UAC via Event Viewer (21)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "UAC Bypass Attempt via Privileged IFileOperation COM Interface (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "UAC Bypass via Windows Firewall Snap-In Hijack (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "UAC Bypass Attempt with IEditionUpgradeManager Elevated COM Interface (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "UAC Bypass via ICMLuaUtil Elevated COM Interface (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "UAC Bypass Attempt via Elevated COM Internet Explorer Add-On Installer (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "UAC Bypass Attempt via Windows Directory Masquerading (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Disabling User Account Control via Registry Modification (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Disabling User Account Control via Registry Modification (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548.002",
+			"tactic": "defense-evasion",
+			"score": 10,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "UAC Bypass via DiskCleanup Scheduled Task Hijack (47)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Bypass UAC via Event Viewer (21)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "UAC Bypass Attempt via Privileged IFileOperation COM Interface (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "UAC Bypass via Windows Firewall Snap-In Hijack (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "UAC Bypass Attempt with IEditionUpgradeManager Elevated COM Interface (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "UAC Bypass via ICMLuaUtil Elevated COM Interface (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "UAC Bypass Attempt via Elevated COM Internet Explorer Add-On Installer (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "UAC Bypass Attempt via Windows Directory Masquerading (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Disabling User Account Control via Registry Modification (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Disabling User Account Control via Registry Modification (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1211",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / High",
+					"value": "Unusual Executable File Creation by a System Critical Process (73)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059",
+			"tactic": "execution",
+			"score": 9,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Med.",
+					"value": "Unusual Parent Process for cmd.exe (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Command Prompt Network Connection (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Svchost spawning Cmd (21)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Conhost Spawned By Suspicious Parent Process (73)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Execution via MSSQL xp_cmdshell Stored Procedure (73)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Command Shell Activity Started via RunDLL32 (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious PowerShell Engine ImageLoad (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Remote File Download via PowerShell (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Command Execution via SolarWinds Process (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1036",
+			"tactic": "defense-evasion",
+			"score": 11,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Med.",
+					"value": "Suspicious WerFault Child Process (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious Endpoint Security Parent Process (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Windows Error Manager Masquerading (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Renamed AutoIt Scripts Interpreter (47)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Potential DLL SideLoading via Trusted Microsoft Programs (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious Zoom Child Process (47)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Microsoft Build Engine Using an Alternate Name (21)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Potential Process Herpaderping Attempt (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Program Files Directory Masquerading (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Executable File Creation with Multiple Extensions (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Executable File Creation with Multiple Extensions (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1055",
+			"tactic": "defense-evasion",
+			"score": 10,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious .NET Code Compilation (47)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Suspicious Managed Code Hosting Process (73)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Unusual Child Process from a System Virtual Process (73)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Suspicious Process from Conhost (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious Zoom Child Process (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Unusual Parent-Child Relationship (47)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Process Injection by the Microsoft Build Engine (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Process Injection by the Microsoft Build Engine (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Unusual Service Host Child Process - Childless Service (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Unusual Service Host Child Process - Childless Service (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1055",
+			"tactic": "privilege-escalation",
+			"score": 10,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious .NET Code Compilation (47)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Suspicious Managed Code Hosting Process (73)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Unusual Child Process from a System Virtual Process (73)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Suspicious Process from Conhost (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious Zoom Child Process (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Unusual Parent-Child Relationship (47)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Process Injection by the Microsoft Build Engine (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Process Injection by the Microsoft Build Engine (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Unusual Service Host Child Process - Childless Service (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Unusual Service Host Child Process - Childless Service (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1003",
+			"tactic": "credential-access",
+			"score": 12,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / High",
+					"value": "Mimikatz Memssp Log File Detected (73)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Microsoft Build Engine Loading Windows Credential Libraries (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Microsoft IIS Connection Strings Decryption (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Microsoft IIS Service Account Password Dumped (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Credential Acquisition via Registry Hive Dumping (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "NTDS or SAM Database File Copied (73)"
+				},
+				{
+					"name": "Q / High",
+					"value": "LSASS Memory Dump Creation (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Potential Credential Access via Windows Utilities (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Modification of WDigest Security Provider (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Searching for Saved Credentials via VaultCmd (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Modification of WDigest Security Provider (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Searching for Saved Credentials via VaultCmd (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1553",
+			"tactic": "defense-evasion",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Windows CryptoAPI Spoofing Vulnerability (CVE-2020-0601 - CurveBall) (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "SIP Provider Modification (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "SIP Provider Modification (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Creation or Modification of Root Certificate (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1553.002",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Windows CryptoAPI Spoofing Vulnerability (CVE-2020-0601 - CurveBall) (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546",
+			"tactic": "privilege-escalation",
+			"score": 10,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Potential Modification of Accessibility Binaries (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Potential Modification of Accessibility Binaries (73)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Potential Application Shimming via Sdbinst (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Potential Application Shimming via Sdbinst (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Installation of Custom Shim Databases (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Image File Execution Options Injection (41)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Registry Persistence via AppCert DLL (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Registry Persistence via AppInit DLL (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Component Object Model Hijacking (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Persistence via WMI Event Subscription (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1546",
+			"tactic": "persistence",
+			"score": 10,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Potential Modification of Accessibility Binaries (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Potential Modification of Accessibility Binaries (73)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Potential Application Shimming via Sdbinst (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Potential Application Shimming via Sdbinst (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Installation of Custom Shim Databases (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Image File Execution Options Injection (41)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Registry Persistence via AppCert DLL (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Registry Persistence via AppInit DLL (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Component Object Model Hijacking (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Persistence via WMI Event Subscription (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1546.008",
+			"tactic": "privilege-escalation",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Potential Modification of Accessibility Binaries (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Potential Modification of Accessibility Binaries (73)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.008",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Potential Modification of Accessibility Binaries (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Potential Modification of Accessibility Binaries (73)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070",
+			"tactic": "defense-evasion",
+			"score": 10,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Deleting Backup Catalogs with Wbadmin (21)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Volume Shadow Copy Deletion via WMIC (73)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Delete Volume USN Journal with Fsutil (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Clearing Windows Event Logs (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Modification of Boot Configuration (21)"
+				},
+				{
+					"name": "Q / High",
+					"value": "IIS HTTP Logging Disabled (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "WebServer Access Logs Deleted (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Potential Secure File Deletion via SDelete Utility (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Process Termination followed by Deletion (47)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Windows Event Logs Cleared (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1070.004",
+			"tactic": "defense-evasion",
+			"score": 5,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Deleting Backup Catalogs with Wbadmin (21)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Volume Shadow Copy Deletion via WMIC (73)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Delete Volume USN Journal with Fsutil (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Modification of Boot Configuration (21)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Potential Secure File Deletion via SDelete Utility (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1087",
+			"tactic": "discovery",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Net command via SYSTEM account (21)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "AdFind Command Activity (21)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Enumeration of Administrator Accounts (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1021",
+			"tactic": "lateral-movement",
+			"score": 18,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Local Service Commands (21)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Service Command Lateral Movement (21)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Potential Remote Desktop Tunneling Detected (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Lateral Movement via Startup Folder (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Remote Execution via File Shares (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Incoming DCOM Lateral Movement via MSHTA (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Mounting Hidden or WebDav Remote Shares (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Remote File Copy to a Hidden Share (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Incoming DCOM Lateral Movement with MMC (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Incoming DCOM Lateral Movement with ShellBrowserWindow or ShellWindows (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Remotely Started Services via RPC (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Potential SharpRDP Behavior (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Execution via TSClient Mountpoint (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Remote Scheduled Task Creation (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious RDP ActiveX Client Loaded (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Incoming Execution via PowerShell Remoting (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Incoming Execution via WinRM Remote Shell (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "RDP Enabled via Registry (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1127",
+			"tactic": "defense-evasion",
+			"score": 7,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "MsBuild Making Network Connections (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Unusual Network Activity from a Windows System Binary (21)"
+				},
+				{
+					"name": "Q / Med.",
+					"value": "Microsoft Build Engine Started by a System Process (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Unusual Process Network Connection (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Trusted Developer Application Usage (21)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Microsoft Build Engine Started by an Office Application (73)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Microsoft Build Engine Started by a Script Process (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1546.011",
+			"tactic": "privilege-escalation",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Potential Application Shimming via Sdbinst (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Potential Application Shimming via Sdbinst (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Installation of Custom Shim Databases (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.011",
+			"tactic": "persistence",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Potential Application Shimming via Sdbinst (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Potential Application Shimming via Sdbinst (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Installation of Custom Shim Databases (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1105",
+			"tactic": "command-and-control",
+			"score": 7,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "Command Prompt Network Connection (21)"
+				},
+				{
+					"name": "Q / Med.",
+					"value": "Remote File Copy via TeamViewer (47)"
+				},
+				{
+					"name": "Q / Med.",
+					"value": "Remote File Download via MpCmdRun (47)"
+				},
+				{
+					"name": "Q / Med.",
+					"value": "Remote File Download via Desktopimgdownldr Utility (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Network Connection via Certutil (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Remote File Download via Script Interpreter (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Remote File Download via PowerShell (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1136",
+			"tactic": "persistence",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "User Account Creation (21)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Creation of a Hidden Local User Account (73)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "User Added to Privileged Group in Active Directory (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "User Added to Privileged Group in Active Directory (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1564",
+			"tactic": "defense-evasion",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Adding Hidden File Attribute via Attrib (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Unusual Process Execution Path - Alternate Data Stream (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Unusual File Creation - Alternate Data Stream (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1564.001",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Adding Hidden File Attribute via Attrib (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1140",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Med.",
+					"value": "Encoding or Decoding Files via CertUtil (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Encoded Executable Stored in the Registry (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562",
+			"tactic": "defense-evasion",
+			"score": 7,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Med.",
+					"value": "Disable Windows Firewall Rules via Netsh (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Remote Desktop Enabled in Windows Firewall (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Scheduled Tasks AT Command Enabled (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Port Forwarding Rule Addition (47)"
+				},
+				{
+					"name": "TH / Med.",
+					"value": "High Number of Process and/or Service Terminations (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "SolarWinds Process Disabling Services via Registry (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Windows Defender Disabled via Registry Modification (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1562.001",
+			"tactic": "defense-evasion",
+			"score": 7,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Med.",
+					"value": "Disable Windows Firewall Rules via Netsh (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Remote Desktop Enabled in Windows Firewall (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Scheduled Tasks AT Command Enabled (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Port Forwarding Rule Addition (47)"
+				},
+				{
+					"name": "TH / Med.",
+					"value": "High Number of Process and/or Service Terminations (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "SolarWinds Process Disabling Services via Registry (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Windows Defender Disabled via Registry Modification (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1057",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Process Discovery via Tasklist (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1033",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Whoami Process Activity (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218",
+			"tactic": "defense-evasion",
+			"score": 10,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Unusual Child Processes of RunDLL32 (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Unusual Network Connection via RunDLL32 (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "InstallUtil Process Making Network Connections (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Mshta Making Network Connections (21)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Network Connection via Compiled HTML File (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "ImageLoad via Windows Update Auto Update Client (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Network Connection via Signed Binary (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Process Activity via Compiled HTML File (21)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Network Connection via Registration Utility (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Execution via Regsvcs/Regasm (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1218.011",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Unusual Child Processes of RunDLL32 (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Unusual Network Connection via RunDLL32 (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1569",
+			"tactic": "execution",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious Process Execution via Renamed PsExec Executable (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Service Command Lateral Movement (21)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "PsExec Network Connection (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1569.002",
+			"tactic": "execution",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious Process Execution via Renamed PsExec Executable (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Service Command Lateral Movement (21)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "PsExec Network Connection (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1566",
+			"tactic": "initial-access",
+			"score": 7,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious MS Office Child Process (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Execution of File Written or Modified by PDF Reader (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Suspicious MS Outlook Child Process (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Windows Script Executing PowerShell (21)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Execution of File Written or Modified by Microsoft Office (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious Explorer Child Process (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Windows Script Interpreter Executing Process via WMI (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1566.001",
+			"tactic": "initial-access",
+			"score": 7,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious MS Office Child Process (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Execution of File Written or Modified by PDF Reader (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Suspicious MS Outlook Child Process (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Windows Script Executing PowerShell (21)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Execution of File Written or Modified by Microsoft Office (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious Explorer Child Process (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Windows Script Interpreter Executing Process via WMI (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1490",
+			"tactic": "impact",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / High",
+					"value": "Volume Shadow Copy Deletion via VssAdmin (73)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1566.002",
+			"tactic": "initial-access",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Execution of File Written or Modified by PDF Reader (21)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Execution of File Written or Modified by Microsoft Office (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious Explorer Child Process (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.004",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "InstallUtil Process Making Network Connections (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.005",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Mshta Making Network Connections (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.001",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "Network Connection via Compiled HTML File (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Process Activity via Compiled HTML File (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1220",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "Network Connection via MsXsl (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious WMIC XSL Script Execution (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1133",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / High",
+					"value": "Unusual Child Process of dns.exe (73)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Unusual File Modification by dns.exe (73)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1133",
+			"tactic": "initial-access",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / High",
+					"value": "Unusual Child Process of dns.exe (73)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Unusual File Modification by dns.exe (73)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543",
+			"tactic": "persistence",
+			"score": 5,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "Service Command Lateral Movement (21)"
+				},
+				{
+					"name": "Q / Med.",
+					"value": "System Shells via Services (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Persistence via Update Orchestrator Service Hijack (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Suspicious ImagePath Service Creation (73)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Unusual Persistence via Services Registry (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1543",
+			"tactic": "privilege-escalation",
+			"score": 5,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "Service Command Lateral Movement (21)"
+				},
+				{
+					"name": "Q / Med.",
+					"value": "System Shells via Services (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Persistence via Update Orchestrator Service Hijack (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Suspicious ImagePath Service Creation (73)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Unusual Persistence via Services Registry (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1543.003",
+			"tactic": "persistence",
+			"score": 5,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "Service Command Lateral Movement (21)"
+				},
+				{
+					"name": "Q / Med.",
+					"value": "System Shells via Services (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Persistence via Update Orchestrator Service Hijack (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Suspicious ImagePath Service Creation (73)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Unusual Persistence via Services Registry (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.003",
+			"tactic": "privilege-escalation",
+			"score": 5,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "Service Command Lateral Movement (21)"
+				},
+				{
+					"name": "Q / Med.",
+					"value": "System Shells via Services (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Persistence via Update Orchestrator Service Hijack (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Suspicious ImagePath Service Creation (73)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Unusual Persistence via Services Registry (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Adobe Hijack Persistence (21)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Privilege Escalation via Windir Environment Variable (73)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1574",
+			"tactic": "privilege-escalation",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Adobe Hijack Persistence (21)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Privilege Escalation via Windir Environment Variable (73)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1574",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Adobe Hijack Persistence (21)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Privilege Escalation via Windir Environment Variable (73)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1574.010",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Adobe Hijack Persistence (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.010",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Adobe Hijack Persistence (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.010",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Adobe Hijack Persistence (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053",
+			"tactic": "execution",
+			"score": 8,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Local Scheduled Task Commands (21)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Persistence via TelemetryController Scheduled Task Hijack (73)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Creation or Modification of a new GPO Scheduled Task or Service (21)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Suspicious Image Load (taskschd.dll) from MS Office (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Remote Scheduled Task Creation (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious Execution via Scheduled Task (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Scheduled Task Created by a Windows Script (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Outbound Scheduled Task Activity via PowerShell (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1053",
+			"tactic": "persistence",
+			"score": 8,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Local Scheduled Task Commands (21)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Persistence via TelemetryController Scheduled Task Hijack (73)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Creation or Modification of a new GPO Scheduled Task or Service (21)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Suspicious Image Load (taskschd.dll) from MS Office (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Remote Scheduled Task Creation (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious Execution via Scheduled Task (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Scheduled Task Created by a Windows Script (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Outbound Scheduled Task Activity via PowerShell (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1053",
+			"tactic": "privilege-escalation",
+			"score": 8,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Local Scheduled Task Commands (21)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Persistence via TelemetryController Scheduled Task Hijack (73)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "Creation or Modification of a new GPO Scheduled Task or Service (21)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Suspicious Image Load (taskschd.dll) from MS Office (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Remote Scheduled Task Creation (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious Execution via Scheduled Task (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Scheduled Task Created by a Windows Script (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Outbound Scheduled Task Activity via PowerShell (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1222",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Potential Evasion via Filter Manager (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1552",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / High",
+					"value": "Creation or Modification of Domain Backup DPAPI private key (73)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1552.004",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / High",
+					"value": "Creation or Modification of Domain Backup DPAPI private key (73)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1565",
+			"tactic": "impact",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Med.",
+					"value": "Hosts File Modified (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1565.001",
+			"tactic": "impact",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Med.",
+					"value": "Hosts File Modified (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.012",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Unusual Parent-Child Relationship (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Unusual Service Host Child Process - Childless Service (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.012",
+			"tactic": "privilege-escalation",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Unusual Parent-Child Relationship (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Unusual Service Host Child Process - Childless Service (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1027",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Microsoft Build Engine Started an Unusual Process (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1027.004",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Microsoft Build Engine Started an Unusual Process (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.010",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "Network Connection via Registration Utility (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1204",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Suspicious PDF Reader Child Process (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1210",
+			"tactic": "lateral-movement",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Direct Outbound SMB Connection (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1068",
+			"tactic": "privilege-escalation",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / High",
+					"value": "Suspicious PrintSpooler SPL File Created (73)"
+				},
+				{
+					"name": "Q / High",
+					"value": "Suspicious PrintSpooler Service Executable File Creation (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Suspicious Print Spooler Point and Print DLL (73)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.009",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "Execution via Regsvcs/Regasm (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1518",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Security Software Discovery using WMIC (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1069",
+			"tactic": "discovery",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "AdFind Command Activity (21)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Enumeration of Administrator Accounts (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1069.002",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "AdFind Command Activity (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1087.002",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "AdFind Command Activity (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1482",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "AdFind Command Activity (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1137",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Persistence via Microsoft Office AddIns (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Persistence via Microsoft Outlook VBA (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1047",
+			"tactic": "execution",
+			"score": 5,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious Cmd Execution via WMI (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "WMI Incoming Lateral Movement (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Suspicious WMI Image Load from MS Office (21)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Enumeration Command Spawned via WMIPrvSE (21)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Enumeration Command Spawned via WMIPrvSE (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1120",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "Peripheral Device Discovery (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547",
+			"tactic": "persistence",
+			"score": 16,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Lateral Movement via Startup Folder (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Persistence via Hidden Run Key Detected (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Installation of Security Support Provider (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Shortcut File Written or Modified for Persistence (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Persistent Scripts in the Startup Directory (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Startup or Run Key Registry Modification (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Execution of Persistent Suspicious Program (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Startup Folder Persistence via Unsigned Process (41)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Persistence via Time Provider Modification (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential LSA Authentication Package Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential LSA Authentication Package Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential LSA Authentication Package Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential LSA Authentication Package Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Persistence via Time Provider Modification (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Port Monitor or Print Processor Registration Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Port Monitor or Print Processor Registration Abuse (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1547",
+			"tactic": "privilege-escalation",
+			"score": 16,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Lateral Movement via Startup Folder (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Persistence via Hidden Run Key Detected (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Installation of Security Support Provider (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Shortcut File Written or Modified for Persistence (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Persistent Scripts in the Startup Directory (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Startup or Run Key Registry Modification (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Execution of Persistent Suspicious Program (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Startup Folder Persistence via Unsigned Process (41)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Persistence via Time Provider Modification (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential LSA Authentication Package Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential LSA Authentication Package Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential LSA Authentication Package Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential LSA Authentication Package Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Persistence via Time Provider Modification (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Port Monitor or Print Processor Registration Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Port Monitor or Print Processor Registration Abuse (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1547.001",
+			"tactic": "persistence",
+			"score": 7,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Lateral Movement via Startup Folder (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Persistence via Hidden Run Key Detected (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Shortcut File Written or Modified for Persistence (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Persistent Scripts in the Startup Directory (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Startup or Run Key Registry Modification (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Execution of Persistent Suspicious Program (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Startup Folder Persistence via Unsigned Process (41)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.001",
+			"tactic": "privilege-escalation",
+			"score": 7,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Lateral Movement via Startup Folder (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Persistence via Hidden Run Key Detected (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Shortcut File Written or Modified for Persistence (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Persistent Scripts in the Startup Directory (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Startup or Run Key Registry Modification (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Execution of Persistent Suspicious Program (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Startup Folder Persistence via Unsigned Process (41)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.001",
+			"tactic": "execution",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "Command Shell Activity Started via RunDLL32 (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious PowerShell Engine ImageLoad (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Remote File Download via PowerShell (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1102",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "Connection to Commonly Abused Web Services (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1129",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Execution via local SxS Shared Module (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021.002",
+			"tactic": "lateral-movement",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Remote Execution via File Shares (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Mounting Hidden or WebDav Remote Shares (21)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Remote File Copy to a Hidden Share (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1573",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "Connection to Commonly Abused Free SSL Certificate Providers (21)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1558",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Kerberos Traffic from Unusual Process (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1546.012",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Image File Execution Options Injection (41)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.012",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Image File Execution Options Injection (41)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1570",
+			"tactic": "lateral-movement",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Lateral Tool Transfer (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1112",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Uncommon Registry Persistence Change (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.009",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Registry Persistence via AppCert DLL (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.009",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Registry Persistence via AppCert DLL (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071",
+			"tactic": "command-and-control",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "TH / Med.",
+					"value": "Potential DNS Tunneling via NsLookup (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Command and Control via Internet Explorer (47)"
+				},
+				{
+					"name": "Q / High",
+					"value": "SUNBURST Command and Control Activity (73)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1546.010",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Registry Persistence via AppInit DLL (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.010",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Registry Persistence via AppInit DLL (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.005",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Installation of Security Support Provider (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.005",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Installation of Security Support Provider (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.015",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Component Object Model Hijacking (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.015",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Component Object Model Hijacking (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Privilege Escalation via Named Pipe Impersonation (73)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1134",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Privilege Escalation via Named Pipe Impersonation (73)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1574.007",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Privilege Escalation via Windir Environment Variable (73)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.007",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Privilege Escalation via Windir Environment Variable (73)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.007",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Privilege Escalation via Windir Environment Variable (73)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1560",
+			"tactic": "collection",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Encrypting Files with WinRar or 7z (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1018",
+			"tactic": "discovery",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Windows Network Enumeration (47)"
+				},
+				{
+					"name": "EQL / Low",
+					"value": "Remote System Discovery Commands (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1135",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Windows Network Enumeration (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1083",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "File and Directory Discovery (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1012",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "Query Registry via reg.exe (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071.001",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / High",
+					"value": "SUNBURST Command and Control Activity (73)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1195",
+			"tactic": "initial-access",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / High",
+					"value": "SUNBURST Command and Control Activity (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious SolarWinds Child Process (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "SolarWinds Process Disabling Services via Registry (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Command Execution via SolarWinds Process (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1195.002",
+			"tactic": "initial-access",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / High",
+					"value": "SUNBURST Command and Control Activity (73)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious SolarWinds Child Process (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "SolarWinds Process Disabling Services via Registry (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Command Execution via SolarWinds Process (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1106",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Suspicious SolarWinds Child Process (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1114",
+			"tactic": "collection",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Exporting Exchange Mailbox via PowerShell (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "New ActiveSyncAllowedDeviceID Added via PowerShell (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1562.006",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "Windows Defender Disabled via Registry Modification (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1539",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Cookies Theft via Browser Debugging (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.001",
+			"tactic": "credential-access",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / High",
+					"value": "Modification of WDigest Security Provider (73)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Modification of WDigest Security Provider (73)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036.004",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Executable File Creation with Multiple Extensions (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Executable File Creation with Multiple Extensions (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1136.001",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Q / Low",
+					"value": "User Added to Privileged Group in Active Directory (21)"
+				},
+				{
+					"name": "Q / Low",
+					"value": "User Added to Privileged Group in Active Directory (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.003",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Persistence via Time Provider Modification (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Persistence via Time Provider Modification (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.003",
+			"tactic": "privilege-escalation",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Persistence via Time Provider Modification (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Persistence via Time Provider Modification (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1553.003",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "SIP Provider Modification (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "SIP Provider Modification (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.002",
+			"tactic": "persistence",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Potential LSA Authentication Package Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential LSA Authentication Package Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential LSA Authentication Package Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential LSA Authentication Package Abuse (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.002",
+			"tactic": "privilege-escalation",
+			"score": 4,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Potential LSA Authentication Package Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential LSA Authentication Package Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential LSA Authentication Package Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential LSA Authentication Package Abuse (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1564.004",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Unusual File Creation - Alternate Data Stream (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1190",
+			"tactic": "initial-access",
+			"score": 3,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Microsoft Exchange Server UM Spawning Suspicious Processes (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Microsoft Exchange Server UM Writing Suspicious Files (47)"
+				},
+				{
+					"name": "EQL / High",
+					"value": "Microsoft Exchange Worker Spawning Suspicious Processes (73)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1553.004",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Low",
+					"value": "Creation or Modification of Root Certificate (21)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1559",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Execution of COM object via Xwizard (47)"
+				}
+			],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1559.001",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Execution of COM object via Xwizard (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.010",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Port Monitor or Print Processor Registration Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Port Monitor or Print Processor Registration Abuse (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.010",
+			"tactic": "privilege-escalation",
+			"score": 2,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Port Monitor or Print Processor Registration Abuse (47)"
+				},
+				{
+					"name": "EQL / Med.",
+					"value": "Potential Port Monitor or Print Processor Registration Abuse (47)"
+				}
+			],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548.001",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548.003",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548.003",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548.004",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548.004",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.001",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.002",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.003",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.003",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.004",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.004",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.005",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.005",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1531",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1087.001",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1087.003",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1087.004",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1098",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1098.001",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1098.002",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1098.003",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1098.004",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1583",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1583.001",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1583.002",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1583.003",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1583.004",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1583.005",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1583.006",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1595",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1595.001",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1595.002",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071.002",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071.003",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071.004",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1010",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1560.001",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1560.002",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1560.003",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1123",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1119",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1020",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1020.001",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1197",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1197",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.004",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.004",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.006",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.006",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.007",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.007",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.008",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.008",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.009",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.009",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.011",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.011",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.012",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.012",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.013",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.013",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.014",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.014",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1037",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1037.001",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.001",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.002",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.002",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.003",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.003",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.004",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.004",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.005",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.005",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1217",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1176",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1110",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1110.001",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1110.002",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1110.003",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1110.004",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1612",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1115",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1580",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1538",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1526",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.002",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.003",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.004",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.005",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.006",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.007",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.008",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1092",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1586",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1586.001",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1586.002",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1554",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1584",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1584.001",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1584.002",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1584.003",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1584.004",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1584.005",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1584.006",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1609",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1613",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1136.002",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1136.003",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.001",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.001",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.002",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.002",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.004",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.004",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1555",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1555.001",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1555.002",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1555.003",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1555.004",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1555.005",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1485",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1132",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1132.001",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1132.002",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1486",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1565.002",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1565.003",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1001",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1001.001",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1001.002",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1001.003",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1074",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1074.001",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1074.002",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1030",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1530",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1602",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1602.001",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1602.002",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1213",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1213.001",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1213.002",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1005",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1039",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1025",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1491",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1491.001",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1491.002",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1610",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1610",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1587",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1587.001",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1587.002",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1587.003",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1587.004",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1006",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1561",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1561.001",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1561.002",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1484",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1484",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1484.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1484.001",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1484.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1484.002",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1189",
+			"tactic": "initial-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1568",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1568.002",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1568.001",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1568.003",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1114.001",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1114.002",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1114.003",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1573.001",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1573.002",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1499",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1499.001",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1499.002",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1499.003",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1499.004",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1611",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1585",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1585.001",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1585.002",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.001",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.001",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.002",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.002",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.003",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.003",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.004",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.004",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.005",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.005",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.006",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.006",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.007",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.007",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.013",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.013",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.014",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.014",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1480",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1480.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1048",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1048.001",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1048.002",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1048.003",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1041",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1011",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1011.001",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1052",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1052.001",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1567",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1567.001",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1567.002",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1203",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1212",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1008",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1222.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1222.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1495",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1187",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1606",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1606.001",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1606.002",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1592",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1592.001",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1592.002",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1592.003",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1592.004",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1589",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1589.001",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1589.002",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1589.003",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1590",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1590.001",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1590.002",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1590.003",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1590.004",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1590.005",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1590.006",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1591",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1591.002",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1591.001",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1591.003",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1591.004",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1200",
+			"tactic": "initial-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1564.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1564.003",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1564.005",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1564.006",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1564.007",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.005",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.005",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.005",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.011",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.011",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.011",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.009",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.009",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.009",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.008",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.008",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.008",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.001",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.001",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.002",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.002",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.006",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.006",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.006",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.004",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.004",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.004",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.012",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.012",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.012",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562.003",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562.004",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562.007",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562.008",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1525",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070.003",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070.005",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070.006",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1202",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1056",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1056.001",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056.001",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056.002",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056.002",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056.003",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056.003",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056.004",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056.004",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1559.002",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1534",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1185",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1557",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1557",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1557.001",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1557.001",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1557.002",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1557.002",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036.003",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036.005",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036.006",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1556",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1556",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1556.001",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.001",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.002",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.002",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.003",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.003",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.003",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.004",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.004",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.004",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1578",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1578.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1578.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1578.003",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1578.004",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1601",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1601.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1601.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1104",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1599",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1599.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1498",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1498.001",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1498.002",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1046",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1040",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1040",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1095",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1571",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.002",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.003",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.006",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.007",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.008",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.005",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.004",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1027.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1027.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1027.003",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1027.005",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1588",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1588.001",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1588.002",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1588.003",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1588.004",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1588.005",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1588.006",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1137.006",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1137.001",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1137.003",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1137.005",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1137.004",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1137.002",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1201",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1069.003",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1069.001",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1566.003",
+			"tactic": "initial-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1598",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1598.001",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1598.002",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1598.003",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1542",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1542.001",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.002",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.003",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.003",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.004",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.004",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.005",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.005",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.001",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.002",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.003",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.003",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.004",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.004",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.005",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.005",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.008",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.008",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.009",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.009",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.011",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.011",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.013",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.013",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.014",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.014",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1572",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1090",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1090.001",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1090.002",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1090.003",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1090.004",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1219",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1563",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1563.001",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1563.002",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021.001",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021.003",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021.004",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021.005",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021.006",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1091",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1091",
+			"tactic": "initial-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1496",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1207",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1014",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.002",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.002",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.002",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.005",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.005",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.005",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.001",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.001",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.001",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.004",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.004",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.004",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.003",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.003",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.003",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.006",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.006",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.006",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.007",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.007",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.007",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1029",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1113",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1597",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1597.001",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1597.002",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1596",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1596.002",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1596.001",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1596.003",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1596.004",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1596.005",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1593",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1593.001",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1593.002",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1594",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1505",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1505.001",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1505.002",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1505.003",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1489",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.003",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.007",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.008",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.012",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1216",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1216.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1072",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1072",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1518.001",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1608",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1608.001",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1608.002",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1608.003",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1608.004",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1608.005",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1528",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1558.001",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1558.002",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1558.003",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1558.004",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1553.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1553.005",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1553.006",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1195.001",
+			"tactic": "initial-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1195.003",
+			"tactic": "initial-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1082",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1614",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1016",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1016.001",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1049",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1007",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1569.001",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1529",
+			"tactic": "impact",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1124",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1080",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1221",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1205",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1205",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1205",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1205.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1205.001",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1205.001",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1537",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1127.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1199",
+			"tactic": "initial-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1111",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552.001",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552.002",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552.003",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552.005",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552.006",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552.007",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1535",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1550",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1550.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.002",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.003",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.003",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.001",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.004",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.004",
+			"tactic": "lateral-movement",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1204.001",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1204.002",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1204.003",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "initial-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1078.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.001",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.001",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.001",
+			"tactic": "initial-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.002",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.002",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.002",
+			"tactic": "initial-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.003",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.003",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.003",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.003",
+			"tactic": "initial-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.004",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.004",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.004",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.004",
+			"tactic": "initial-access",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1125",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1497",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1497",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1497.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1497.001",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1497.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1497.002",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1497.003",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1497.003",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1600",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1600.001",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1600.002",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1102.001",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1102.002",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1102.003",
+			"tactic": "command-and-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		}
+	],
+	"gradient": {
+		"colors": [
+			"#8ec843",
+			"#ffe766",
+			"#ff6666"
+		],
+		"minValue": 0,
+		"maxValue": 45
+	},
+	"legendItems": [
+		{
+			"color": "#bbddff",
+			"label": "El.Sec. => Elastic Secrity"
+		},
+		{
+			"color": "#fa744e",
+			"label": "EQL => Event Query Language"
+		},
+		{
+			"color": "#0077cc",
+			"label": "ML => Machine Learning"
+		},
+		{
+			"color": "#54bcb2",
+			"label": "Q => Query (KQL, Lucene, Elasticsearch DSL)"
+		},
+		{
+			"color": "#fec514",
+			"label": "TH => Threshold"
+		}
+	],
+	"metadata": [
+		{
+			"name": "Elastic Stack version",
+			"value": "7.12.0"
+		}
+	],
+	"showTacticRowBackground": true,
+	"tacticRowBackground": "#bbddff",
+	"selectTechniquesAcrossTactics": false,
+	"selectSubtechniquesWithParent": false
+}
